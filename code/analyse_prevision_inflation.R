@@ -1341,7 +1341,3 @@ ggsave("figures/figure_inflation_energie.png", fig_inflation, width = 7, height 
 ggsave("figures/figure_brent.png", fig_brent, width = 7, height = 4)
 ggsave("figures/figure_gaz_ttf.png", fig_gaz, width = 7, height = 4)
 ggsave("figures/figure_matieres_premieres.png", fig_mp, width = 7, height = 4)
-
-# Sauvegarde finale ----
-
-save.image("memoire_resultats_complets.RData")

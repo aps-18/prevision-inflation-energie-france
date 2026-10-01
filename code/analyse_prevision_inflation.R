@@ -32,16 +32,16 @@ convertir_nombre <- function(x) {
   as.numeric(x)
 }
 
-ipc <- read_csv2("../data/raw/ipc_energie.csv", col_types = cols(.default = col_character())) |>
+ipc <- read_csv2("data/raw/ipc_energie.csv", col_types = cols(.default = col_character())) |>
   clean_names()
 
-gaz <- read_csv2("../data/raw/gaz_ttf.csv", col_types = cols(.default = col_character())) |>
+gaz <- read_csv2("data/raw/gaz_ttf.csv", col_types = cols(.default = col_character())) |>
   clean_names()
 
-brent <- read_csv2("../data/raw/brentE.csv", col_types = cols(.default = col_character())) |>
+brent <- read_csv2("data/raw/brentE.csv", col_types = cols(.default = col_character())) |>
   clean_names()
 
-mp <- read_csv2("../data/raw/mp_hors_energie_eur.csv", col_types = cols(.default = col_character())) |>
+mp <- read_csv2("data/raw/mp_hors_energie_eur.csv", col_types = cols(.default = col_character())) |>
   clean_names()
 
 ipc_clean <- ipc |>
@@ -111,7 +111,7 @@ base <- ipc_clean |>
 
 base_finale <- base
 
-write_csv(base_finale, "../data/processed/base_memoire.csv")
+write_csv(base_finale, "data/processed/base_memoire.csv")
 
 # Préparation de la base de modélisation ----
 
@@ -512,7 +512,7 @@ print(comparaison_globale)
 
 write_csv(
   comparaison_globale,
-  "../data/processed/resultats_comparaison_globale.csv"
+  "data/processed/resultats_comparaison_globale.csv"
 )
 
 # Prévisions des modèles ----
@@ -534,7 +534,7 @@ resultats_modeles <- data.frame(
 
 write_csv(
   resultats_modeles,
-  "../data/processed/previsions_modeles.csv"
+  "data/processed/previsions_modeles.csv"
 )
 
 # Graphique des prévisions ----
@@ -592,7 +592,7 @@ fig_previsions <- ggplot(
 print(fig_previsions)
 
 ggsave(
-  "../figures/figure_previsions_modeles.png",
+  "figures/figure_previsions_modeles.png",
   fig_previsions,
   width = 7,
   height = 4

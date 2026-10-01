@@ -76,7 +76,7 @@ L'analyse de l'importance des variables montre également que les **retards de l
 
 ![Importance des variables](figures/figure_importance_rf2.png)
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 - **R**
 - `forecast`
@@ -89,7 +89,7 @@ L'analyse de l'importance des variables montre également que les **retards de l
 - `tidyr`
 - `ggplot2`
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```text
 prevision-inflation-energie-france/
@@ -111,12 +111,13 @@ prevision-inflation-energie-france/
 - `figures` : visualisations produites par le script
 - `rapport` : mémoire complet et note de synthèse
 
-## 📄 Rapport
+## Rapport
 
 Le mémoire complet et sa note de synthèse sont disponibles dans le dossier [`rapport`](rapport/).
 
 ## 👤 Auteur
 
-**Amélie Pires**  
-Master Économétrie Appliquée — IAE Nantes  
-[LinkedIn](https://www.linkedin.com/in/amelie-pires)
+**Amélie Pires**
+
+[LinkedIn](https://www.linkedin.com/in/amelie-pires) · [GitHub](https://github.com/aps-18)
+

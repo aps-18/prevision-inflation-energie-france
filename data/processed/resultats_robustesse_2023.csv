@@ -1,0 +1,6 @@
+Modele,RMSE,MAE,R2
+ARMAX,13.13,10.32,-3.37
+RF1 : retards inflation,5.06,3.76,0.35
+RF2 : retards inflation + Brent,6.32,5.46,-0.01
+RF3 : retards inflation + Brent + gaz,9.97,8.96,-1.52
+RF4 : retards inflation + Brent + gaz + matières premières,11.82,10.72,-2.54

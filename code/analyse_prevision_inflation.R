@@ -612,7 +612,7 @@ print(importance_table_rf2)
 
 write_csv(
   importance_table_rf2,
-  "../data/processed/importance_variables_rf2.csv"
+  "data/processed/importance_variables_rf2.csv"
 )
 
 fig_importance_rf2 <- ggplot(
@@ -631,7 +631,7 @@ fig_importance_rf2 <- ggplot(
 print(fig_importance_rf2)
 
 ggsave(
-  "../figures/figure_importance_rf2.png",
+  "figures/figure_importance_rf2.png",
   fig_importance_rf2,
   width = 7,
   height = 4
@@ -699,7 +699,7 @@ print(tests_dm)
 
 write_csv(
   tests_dm,
-  "../data/processed/tests_diebold_mariano.csv"
+  "data/processed/tests_diebold_mariano.csv"
 )
 
 # Analyse des erreurs ----
@@ -762,9 +762,9 @@ print(top_erreurs_rf2)
 print(top_erreurs_rf2_rolling)
 print(resume_erreurs)
 
-write_csv(top_erreurs_rf2, "../data/processed/top_erreurs_rf2.csv")
-write_csv(top_erreurs_rf2_rolling, "../data/processed/top_erreurs_rf2_rolling.csv")
-write_csv(resume_erreurs, "../data/processed/resume_erreurs_rf2.csv")
+write_csv(top_erreurs_rf2, "data/processed/top_erreurs_rf2.csv")
+write_csv(top_erreurs_rf2_rolling, "data/processed/top_erreurs_rf2_rolling.csv")
+write_csv(resume_erreurs, "data/processed/resume_erreurs_rf2.csv")
 
 # Robustesse sur 100 graines aléatoires ----
 
@@ -825,12 +825,12 @@ print(table_robustesse_seeds)
 
 write_csv(
   resultats_seeds_rf2,
-  "../data/processed/robustesse_rf2_100_graines_detail.csv"
+  "data/processed/robustesse_rf2_100_graines_detail.csv"
 )
 
 write_csv(
   table_robustesse_seeds,
-  "../data/processed/robustesse_rf2_100_graines_resume.csv"
+  "data/processed/robustesse_rf2_100_graines_resume.csv"
 )
 
 # Robustesse avec période de test à partir de 2023 ----
@@ -974,7 +974,7 @@ print(comparaison_robustesse_2023)
 
 write_csv(
   comparaison_robustesse_2023,
-  "../data/processed/resultats_robustesse_2023.csv"
+  "data/processed/resultats_robustesse_2023.csv"
 )
 
 # Statistiques descriptives détaillées ----
@@ -1023,7 +1023,7 @@ print(stats_descriptives_long)
 
 write_csv(
   stats_descriptives_long,
-  "../data/processed/stats_descriptives.csv"
+  "data/processed/stats_descriptives.csv"
 )
 
 # Points atypiques ----
@@ -1074,7 +1074,7 @@ print(table_outliers_clean)
 
 write_csv(
   table_outliers_clean,
-  "../data/processed/points_atypiques_inflation.csv"
+  "data/processed/points_atypiques_inflation.csv"
 )
 
 serie_corrigee <- outliers_inflation$yadj
@@ -1114,7 +1114,7 @@ print(stationnarite_table)
 
 write_csv(
   stationnarite_table,
-  "../data/processed/tests_stationnarite.csv"
+  "data/processed/tests_stationnarite.csv"
 )
 
 # Décomposition STL, ACF et PACF ----
@@ -1154,9 +1154,9 @@ print(fig_stl)
 print(fig_acf)
 print(fig_pacf)
 
-ggsave("../figures/figure_stl.png", fig_stl, width = 7, height = 4)
-ggsave("../figures/figure_acf.png", fig_acf, width = 7, height = 4)
-ggsave("../figures/figure_pacf.png", fig_pacf, width = 7, height = 4)
+ggsave("figures/figure_stl.png", fig_stl, width = 7, height = 4)
+ggsave("figures/figure_acf.png", fig_acf, width = 7, height = 4)
+ggsave("figures/figure_pacf.png", fig_pacf, width = 7, height = 4)
 
 # Best Subset ----
 
@@ -1202,7 +1202,7 @@ print(variables_best_bic)
 
 write_csv(
   best_subset_table,
-  "../data/processed/best_subset.csv"
+  "data/processed/best_subset.csv"
 )
 
 # GETS ----
@@ -1255,7 +1255,7 @@ print(gets_coef_table)
 
 write_csv(
   gets_coef_table,
-  "../data/processed/gets_selection.csv"
+  "data/processed/gets_selection.csv"
 )
 
 # Graphiques descriptifs ----
@@ -1336,11 +1336,11 @@ print(fig_brent)
 print(fig_gaz)
 print(fig_mp)
 
-ggsave("../figures/figure_ipc_energie.png", fig_ipc, width = 7, height = 4)
-ggsave("../figures/figure_inflation_energie.png", fig_inflation, width = 7, height = 4)
-ggsave("../figures/figure_brent.png", fig_brent, width = 7, height = 4)
-ggsave("../figures/figure_gaz_ttf.png", fig_gaz, width = 7, height = 4)
-ggsave("../figures/figure_matieres_premieres.png", fig_mp, width = 7, height = 4)
+ggsave("figures/figure_ipc_energie.png", fig_ipc, width = 7, height = 4)
+ggsave("figures/figure_inflation_energie.png", fig_inflation, width = 7, height = 4)
+ggsave("figures/figure_brent.png", fig_brent, width = 7, height = 4)
+ggsave("figures/figure_gaz_ttf.png", fig_gaz, width = 7, height = 4)
+ggsave("figures/figure_matieres_premieres.png", fig_mp, width = 7, height = 4)
 
 # Sauvegarde finale ----
 

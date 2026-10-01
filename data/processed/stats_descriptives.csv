@@ -1,0 +1,5 @@
+variable,moyenne,ecart_type,minimum,maximum,skewness,kurtosis
+inflation_energie,4.34,9.53,-11.01,33.05,0.75,3.15
+brent_eur,60.3,18.57,16.9,115.5,0.5,3.3
+gaz_ttf,36.22,38.51,4.9,236,2.78,11.72
+mp_hors_energie_eur,126.7,26.98,88.4,179,0.31,1.54

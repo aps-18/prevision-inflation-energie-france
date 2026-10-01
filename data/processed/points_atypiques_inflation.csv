@@ -1,0 +1,9 @@
+date,type,coefhat,tstat,interpretation
+2021-04,LS,23.21,13.04,Reprise post-Covid et tensions sur les marchés de l'énergie
+2023-03,LS,-17.08,-9.36,Phase de désinflation énergétique après le pic de 2022
+2016-07,LS,11.81,7.93,Point atypique lié à une variation marquée de l'inflation énergétique
+2022-04,LS,12.15,4.83,Choc énergétique lié à la crise européenne et à la guerre en Ukraine
+2020-04,LS,-8.02,-4.75,Crise sanitaire et chute de la demande d'énergie
+2015-07,LS,-5.41,-4.3,Point atypique lié à une variation marquée de l'inflation énergétique
+2022-08,LS,-11.32,-4.14,Ajustement après le pic du choc énergétique
+2019-01,LS,-4.77,-3.46,Point atypique lié à une variation marquée de l'inflation énergétique

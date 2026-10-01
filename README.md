@@ -115,7 +115,13 @@ prevision-inflation-energie-france/
 
 Le mémoire complet et sa note de synthèse sont disponibles dans le dossier [`rapport`](rapport/).
 
-## 👤 Auteur
+## Auteur
+
+**Amélie Pires**
+
+Master 1 Économétrie Appliquée — Économétrie linéaire avancée - IAE Nantes, 2025-2026.
+
+## Contact
 
 **Amélie Pires**
 
